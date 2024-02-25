@@ -7,21 +7,6 @@
 https://github.com/erroot/plugin-transform.git
 
 
-http://127.0.0.1:8088/transform?streampath=njtv/njy&transtype=0&newstreampath=njtv/njy-tsh264&videocodec=libx264&osdtext=API动态添加h264转码&resolution=388*256
-
-参数
-streampath： 订阅流地址（m7s 内部流地址）
-newstreampath：  转码发布的新流地址
-videocodec： 转码流编码 libx264 、 libx265
-osdtext:  自定义叠加文字 默认“M7S转码”
-osdfontcolor: 叠加文字颜色  默认green
-osdfontsize： 叠加文字颜色  默认100
-osdy: 与osdX配合使用叠加文字位置
-osdx: 与osdY配合使用叠加文字位置
-osdbox: 叠加背景框  默认0， 1可选
-osdboxcolor: 叠加背颜色  默认yellow
-resolution： 转码分辨率 格式w*h  eg:720*576
-
 
 ## 插件引入
 ```go
@@ -55,6 +40,22 @@ transform:
 如果ffmpeg无法全局访问，则可修改ffmpeg路径为本地的绝对路径
 ## API
 
-### `/transform/[streamPath]`
+### `/transform/`
+
+http://127.0.0.1:8088/transform?streampath=njtv/njy&transtype=0&newstreampath=njtv/njy-tsh264&videocodec=libx264&osdtext=API动态添加h264转码&resolution=388*256
+
+参数
+streampath： 订阅流地址（m7s 内部流地址）
+newstreampath：  转码发布的新流地址
+videocodec： 转码流编码 libx264 、 libx265
+osdtext:  自定义叠加文字 默认“M7S转码”
+osdfontcolor: 叠加文字颜色  默认green
+osdfontsize： 叠加文字颜色  默认100
+osdy: 与osdX配合使用叠加文字位置
+osdx: 与osdY配合使用叠加文字位置
+osdbox: 叠加背景框  默认0， 1可选
+osdboxcolor: 叠加背颜色  默认yellow
+resolution： 转码分辨率 格式w*h  eg:720*576
+
 
 
