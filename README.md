@@ -4,7 +4,7 @@
 
 ## 插件地址
 
-https://github.com/Monibuca/plugin-transform
+https://github.com/erroot/plugin-transform.git
 
 
 http://127.0.0.1:8088/transform?streampath=njtv/njy&transtype=0&newstreampath=njtv/njy-tsh264&videocodec=libx264&osdtext=API动态添加h264转码&resolution=388*256
