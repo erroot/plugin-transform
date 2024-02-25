@@ -1,0 +1,19 @@
+
+transform: 
+  ffmpeg: ffmpeg.exe
+  fontfile: "SIMHEI.TTF"   #不支持绝对路线需要把系统字符复制到程序执行的相对目录下原因未知
+  publishtimeout: 20s 
+  onstart:  # 服务启动时自动拉流
+    -
+      streampath: "njtv/glgc"
+      resolution: "320*240"
+      videocodec: "libx264"
+      osdfontcolor: "green"
+      osdText: "默认配置M7S转码"
+      osdbox: 1
+      osdboxcolor: "yellow"
+    -
+      streampath: "live/305"
+      resolution: "320*240"
+      videocodec: "libx264"
+      osdfontcolor: "red"
