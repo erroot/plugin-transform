@@ -1,5 +1,5 @@
 # 截图插件
-
+![image](https://github.com/erroot/plugin-transform/blob/master/result1.jpg)
 
 
 ## 插件地址
